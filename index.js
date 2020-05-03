@@ -25,7 +25,7 @@ function viewCart() {
   if (j = 0) {
     return "Your shopping cart is empty."
   } else if (j = 1) {
-    return `${statement} ${cart[itemName[0]]} at $${cart[itemPrice[0]]}.`
+    return `${statement} ${cart[0]} at $${cart[0]}.`
   } else {
     for (let i = 0; i + 1 < j; i--) {
       statement += ` ${cart[itemName[i]]} at $${cart[itemPrice[i]]},`
