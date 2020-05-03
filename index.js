@@ -22,6 +22,7 @@ function viewCart() {
   // write your code here
   var statement = "In your cart, you have"
   if (cart.length = 0) {
+    console.log("Empty run")
     return "Your shopping cart is empty."
   } else if (cart.length = 1) {
     return `${statement} ${cart[0].itemName} at $${cart[0].itemPrice}.`
