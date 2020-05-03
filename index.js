@@ -25,8 +25,8 @@ function viewCart() {
   if (cart.length === 0) {
     console.log("Empty run")
     return "Your shopping cart is empty."
-  } else if (cart.length = 2) {
-    return `${statement} ${cart[1].itemName} at $${cart[1].itemPrice}.`
+  } else if (cart.length === 1) {
+    return `${statement} ${cart[0].itemName} at $${cart[0].itemPrice}.`
   } else {
     for (let i = 1; i + 1 < cart.length; i++) {
       statement += ` ${cart[i][itemName]} at $${cart[i][itemPrice]},`
