@@ -24,10 +24,10 @@ function viewCart() {
   var j = cart.length
   if (cart.length = 0) {
     return "Your shopping cart is empty."
-  } else if (j = 1) {
+  } else if (cart.length = 1) {
     return `${statement} ${cart[0]} at $${cart[0]}.`
   } else {
-    for (let i = 0; i + 1 < j; i--) {
+    for (let i = 0; i + 1 < cart.length; i--) {
       statement += ` ${cart[itemName[i]]} at $${cart[itemPrice[i]]},`
     }
     statement += ` and ${cart[itemName[j-1]]} at $${cart[itemPrice[j-1]]}.`
