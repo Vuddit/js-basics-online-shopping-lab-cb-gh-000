@@ -22,7 +22,7 @@ function viewCart() {
   // write your code here
   var statement = "In your cart, you have"
   var j = cart.length
-  if (cart.length = 1) {
+  if (cart[0] = "undefined") {
     console.log("Empty run")
     return "Your shopping cart is empty."
   } else if (cart.length = 2) {
