@@ -21,6 +21,7 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   var statement = "In your cart, you have"
+  var j = cart.length
   if (cart.length = 0) {
     console.log("Empty run")
     return "Your shopping cart is empty."
