@@ -28,9 +28,9 @@ function viewCart() {
     return `${statement} ${cart[0].itemName} at $${cart[0].itemPrice}.`
   } else {
     for (let i = 0; i + 1 < cart.length; i--) {
-      statement += ` ${cart[itemName[i]]} at $${cart[itemPrice[i]]},`
+      statement += ` ${cart[i].itemName} at $${cart[i].itemPrice},`
     }
-    statement += ` and ${cart[itemName[j-1]]} at $${cart[itemPrice[j-1]]}.`
+    statement += ` and ${cart[j-1].itemName} at $${cart[j-1].itemPrice}.`
     return statement
   }
 }
